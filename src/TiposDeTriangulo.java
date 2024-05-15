@@ -21,9 +21,9 @@ public class TiposDeTriangulo {
         if (soma1 > lado3 && soma2 > lado1 && soma3 > lado2){
             if (lado1 != lado2 && lado2 != lado3 && lado3 != lado1){
                 System.out.println(" Este é um triângulo escaleno");
-            } else if (lado1 == lado2 && lado2 != lado3) {
+            } else if (lado1 == lado2 && lado2 != lado3 && lado3 != lado1 || lado3 == lado2 && lado2 != lado1) {
                 System.out.println("Este é um triângulo isósceles");
-            } else if (lado1 == lado2 && lado2 == lado3) {
+            } else if (lado1 == lado2 && lado2 == lado3 && lado3 == lado1) {
                 System.out.println("Este é um triângulo equilátero");
             }
         } else {
